@@ -1,6 +1,6 @@
 using System;
 
-namespace DelProjekt1_Disp_Backend
+namespace ShareOwnerAsAService
 {
     public class WeatherForecast
     {

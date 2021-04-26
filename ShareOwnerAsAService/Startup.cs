@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,10 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Microsoft.EntityFrameworkCore;
-using DelProjekt1_Disp_Backend.Data;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace DelProjekt1_Disp_Backend
+namespace ShareOwnerAsAService
 {
     public class Startup
     {
@@ -28,16 +26,12 @@ namespace DelProjekt1_Disp_Backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-         
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "DelProjekt1_Disp_Backend", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ShareOwnerAsAService", Version = "v1" });
             });
-
-            services.AddDbContext<DelProjekt1_Disp_BackendContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("DbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +41,7 @@ namespace DelProjekt1_Disp_Backend
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DelProjekt1_Disp_Backend v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ShareOwnerAsAService v1"));
             }
 
             app.UseHttpsRedirection();
