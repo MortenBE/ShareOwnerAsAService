@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{48132721-5C0D-486E-A16E-C0A9609E2343}|Default">
+  <MonoDevelop.Ide.ItemProperties.RequesterService PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RequesterService/Models/RequesterModel.cs">
+    <Files>
+      <File FileName="RequesterService/Models/RequesterModel.cs" Line="8" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RequesterService" expanded="True">
+            <Node name="RequesterService" expanded="True">
+              <Node name="Controllers" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

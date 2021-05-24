@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{F879425F-830E-4C52-BDA4-0EBC14CF26C5}|Default">
+  <MonoDevelop.Ide.ItemProperties.ShareService PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShareService/Controllers/ShareController.cs">
+    <Files>
+      <File FileName="ShareService/Models/ShareServiceModel.cs" Line="8" Column="11" />
+      <File FileName="ShareService/Controllers/ShareController.cs" Line="6" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShareService" expanded="True">
+            <Node name="ShareService" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" selected="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

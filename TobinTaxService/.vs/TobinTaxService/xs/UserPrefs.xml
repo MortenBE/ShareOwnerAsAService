@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{07F63040-81A2-40A8-B13B-8B127373CFE0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TobinTaxService/Models/TobinTaxModel.cs">
+    <Files>
+      <File FileName="TobinTaxService/Models/TobinTaxModel.cs" Line="14" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TobinTaxService" expanded="True">
+            <Node name="TobinTaxService" expanded="True">
+              <Node name="Controllers" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TobinTaxService PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
