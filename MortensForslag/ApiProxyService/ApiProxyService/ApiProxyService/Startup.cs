@@ -30,7 +30,7 @@ namespace ApiProxyService
         {
             services.AddHttpClient("backend", c =>
             {
-                c.BaseAddress = new Uri("https://localhost:44338/api/");
+                c.BaseAddress = new Uri("http://localhost:26224/api/");
             });
 
             services.AddControllers();
