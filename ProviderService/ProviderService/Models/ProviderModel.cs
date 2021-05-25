@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ProviderService.Models
@@ -8,5 +8,6 @@ namespace ProviderService.Models
         [Key]
         public Guid ProviderId { get; set; }
         public string Stock { get; set; }
+        public Guid StockId { get; set; }
     }
 }

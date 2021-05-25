@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Morte\\OneDrive\\Dokumenter\\IKT - Studie\\6. Semester\\Disp\\EksamensProjekt\\ShareOwnerAsAService\\TraderService\\TraderService\\TraderService.csproj": {}
+    "/Users/holm/UNI/ShareOwnerAsAService/TraderService/TraderService/TraderService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Morte\\OneDrive\\Dokumenter\\IKT - Studie\\6. Semester\\Disp\\EksamensProjekt\\ShareOwnerAsAService\\TraderService\\TraderService\\TraderService.csproj": {
+    "/Users/holm/UNI/ShareOwnerAsAService/TraderService/TraderService/TraderService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Morte\\OneDrive\\Dokumenter\\IKT - Studie\\6. Semester\\Disp\\EksamensProjekt\\ShareOwnerAsAService\\TraderService\\TraderService\\TraderService.csproj",
+        "projectUniqueName": "/Users/holm/UNI/ShareOwnerAsAService/TraderService/TraderService/TraderService.csproj",
         "projectName": "TraderService",
-        "projectPath": "C:\\Users\\Morte\\OneDrive\\Dokumenter\\IKT - Studie\\6. Semester\\Disp\\EksamensProjekt\\ShareOwnerAsAService\\TraderService\\TraderService\\TraderService.csproj",
-        "packagesPath": "C:\\Users\\Morte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Morte\\OneDrive\\Dokumenter\\IKT - Studie\\6. Semester\\Disp\\EksamensProjekt\\ShareOwnerAsAService\\TraderService\\TraderService\\obj\\",
+        "projectPath": "/Users/holm/UNI/ShareOwnerAsAService/TraderService/TraderService/TraderService.csproj",
+        "packagesPath": "/Users/holm/.nuget/packages/",
+        "outputPath": "/Users/holm/UNI/ShareOwnerAsAService/TraderService/TraderService/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Morte\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/holm/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

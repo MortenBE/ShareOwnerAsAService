@@ -1,0 +1,59 @@
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/appsettings.json
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.exe
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.deps.json
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.runtimeconfig.json
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.runtimeconfig.dev.json
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ref/ApiProxyService.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.pdb
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Microsoft.OpenApi.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.csprojAssemblyReference.cache
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.AssemblyInfoInputs.cache
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.AssemblyInfo.cs
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.csproj.CoreCompileInputs.cache
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/staticwebassets/ApiProxyService.StaticWebAssets.Manifest.cache
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/staticwebassets/ApiProxyService.StaticWebAssets.xml
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/scopedcss/bundle/ApiProxyService.styles.css
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.RazorTargetAssemblyInfo.cache
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.csproj.CopyComplete
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ref/ApiProxyService.dll
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.pdb
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.genruntimeconfig.cache
+C:/Users/Morte/OneDrive/Dokumenter/IKT - Studie/6. Semester/Disp/EksamensProjekt/ShareOwnerAsAService/MortensForslag/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/appsettings.Development.json
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/appsettings.json
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.deps.json
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.runtimeconfig.json
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.runtimeconfig.dev.json
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ref/ApiProxyService.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/ApiProxyService.pdb
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Microsoft.OpenApi.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.csprojAssemblyReference.cache
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.AssemblyInfoInputs.cache
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.AssemblyInfo.cs
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.csproj.CoreCompileInputs.cache
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.MvcApplicationPartsAssemblyInfo.cs
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.MvcApplicationPartsAssemblyInfo.cache
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/staticwebassets/ApiProxyService.StaticWebAssets.Manifest.cache
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/staticwebassets/ApiProxyService.StaticWebAssets.xml
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/scopedcss/bundle/ApiProxyService.styles.css
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.RazorTargetAssemblyInfo.cache
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.csproj.CopyComplete
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ref/ApiProxyService.dll
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.pdb
+/Users/holm/UNI/ShareOwnerAsAService/ApiProxyService/ApiProxyService/ApiProxyService/obj/Debug/net5.0/ApiProxyService.genruntimeconfig.cache

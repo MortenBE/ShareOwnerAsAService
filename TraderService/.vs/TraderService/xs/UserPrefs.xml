@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{E947DAC2-8258-464D-8DD5-E931E28930AC}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="TraderService/Models/TraderModel.cs">
     <Files>
-      <File FileName="TraderService/Models/TraderModel.cs" Line="12" Column="1" />
-      <File FileName="TraderService/Controllers/TraderController.cs" Line="1" Column="1" />
-      <File FileName="TraderService/Data/TraderDbContext.cs" Line="1" Column="1" />
-      <File FileName="TraderService/appsettings.json" Line="13" Column="2" />
-      <File FileName="TraderService/Program.cs" Line="2" Column="1" />
+      <File FileName="TraderService/Models/TraderModel.cs" Line="9" Column="1" />
+      <File FileName="TraderService/Controllers/TraderController.cs" />
+      <File FileName="TraderService/Data/TraderDbContext.cs" />
+      <File FileName="TraderService/appsettings.json" />
+      <File FileName="TraderService/Program.cs" Line="12" Column="1" />
       <File FileName="TraderService/Startup.cs" Line="10" Column="2" />
     </Files>
     <Pads>

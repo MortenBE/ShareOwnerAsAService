@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{F879425F-830E-4C52-BDA4-0EBC14CF26C5}|Default">
   <MonoDevelop.Ide.ItemProperties.ShareService PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShareService/Controllers/ShareController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShareService/Program.cs">
     <Files>
       <File FileName="ShareService/Models/ShareServiceModel.cs" Line="8" Column="11" />
-      <File FileName="ShareService/Controllers/ShareController.cs" Line="6" Column="25" />
+      <File FileName="ShareService/Controllers/ShareController.cs" Line="17" Column="1" />
+      <File FileName="ShareService/Program.cs" Line="24" Column="65" />
+      <File FileName="ShareService/Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,8 +13,8 @@
           <Node name="ShareService" expanded="True">
             <Node name="ShareService" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" selected="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
