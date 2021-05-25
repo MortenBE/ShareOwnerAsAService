@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 namespace BrokerService.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class BrokerController : Controller
     {
         private BrokerServiceDomain _domain; 

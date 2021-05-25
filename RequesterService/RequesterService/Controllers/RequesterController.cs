@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,10 +13,13 @@ namespace RequesterService.Controllers
     [ApiController]
     public class RequesterController : ControllerBase
     {
+        private readonly RequesterDomain _domain;
+
         private readonly RequesterDbContext _context;
 
-        public RequesterController(RequesterDbContext context)
+        public RequesterController(RequesterDbContext context, IHttpClientFactory clientFactory)
         {
+            _domain = new RequesterDomain(clientFactory);
             _context = context;
         }
 
@@ -78,6 +82,8 @@ namespace RequesterService.Controllers
         {
             _context.RequesterModel.Add(requesterModel);
             await _context.SaveChangesAsync();
+
+            _domain.notifyRequest(requesterModel);
 
             return CreatedAtAction("GetRequesterModel", new { id = requesterModel.RequesterId }, requesterModel);
         }

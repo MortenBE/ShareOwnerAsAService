@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,8 +16,12 @@ namespace ProviderService.Controllers
     {
         private readonly ProviderDbContext _context;
 
-        public ProviderController(ProviderDbContext context)
+        private readonly ProviderDomain _domain;
+
+
+        public ProviderController(ProviderDbContext context, IHttpClientFactory clientFactory)
         {
+            _domain = new ProviderDomain(clientFactory);
             _context = context;
         }
 
@@ -79,6 +84,8 @@ namespace ProviderService.Controllers
         {
             _context.ProviderModel.Add(providerModel);
             await _context.SaveChangesAsync();
+            _domain.notifyProvided(providerModel);
+
 
             return CreatedAtAction("GetProviderModel", new { id = providerModel.ProviderId }, providerModel);
         }
