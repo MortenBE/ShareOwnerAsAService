@@ -27,6 +27,11 @@ namespace RequesterService
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddHttpClient("BrokerService", c =>
+            {
+                c.BaseAddress = new Uri(AppSettings.Get<string>("BrokerService"));
+            });
+
             services.AddControllers();
 
             services.AddDbContext<RequesterDbContext>(options =>
