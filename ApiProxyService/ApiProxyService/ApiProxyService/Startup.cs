@@ -30,19 +30,19 @@ namespace ApiProxyService
         {
             services.AddHttpClient("ShareService", c =>
             {
-                c.BaseAddress = new Uri("http://localhost:5004/api/");
+                c.BaseAddress = new Uri(AppSettings.Get<string>("ShareService"));
             });
             services.AddHttpClient("TraderService", c =>
             {
-                c.BaseAddress = new Uri("http://localhost:5005/api/");
+                c.BaseAddress = new Uri(AppSettings.Get<string>("TraderService"));
             });
             services.AddHttpClient("RequesterService", c =>
             {
-                c.BaseAddress = new Uri("http://localhost:5002/api/");
+                c.BaseAddress = new Uri(AppSettings.Get<string>("RequesterService"));
             });
             services.AddHttpClient("ProviderService", c =>
             {
-                c.BaseAddress = new Uri("http://localhost:5003/api/");
+                c.BaseAddress = new Uri(AppSettings.Get<string>("ProviderService"));
             });
 
             services.AddControllers();

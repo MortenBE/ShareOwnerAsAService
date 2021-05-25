@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using Newtonsoft.Json;
@@ -14,7 +13,7 @@ namespace BrokerService
             _clientFactory = clientFactory;
         }
 
-        public async void buyShare(Requester requester)
+        public async void BuyShare(Requester requester)
         {
             var ProviderClient = _clientFactory.CreateClient("ProviderService");
             var RequesterClient = _clientFactory.CreateClient("RequesterService");
@@ -30,25 +29,29 @@ namespace BrokerService
 
             if(providedStock != null)
             {
-                await ProviderClient.DeleteAsync(providedStock.ProviderId.ToString());
-                await RequesterClient.DeleteAsync(requester.RequesterId.ToString());
+                var delResult1 = await ProviderClient.DeleteAsync(providedStock.ProviderId.ToString());
+                var delResult2 = await RequesterClient.DeleteAsync(requester.RequesterId.ToString());
 
-                var trans = new transactionModel()
+        
+
+                if (delResult1.IsSuccessStatusCode && delResult2.IsSuccessStatusCode)
                 {
-                    ShareId = providedStock.StockId,
-                    TraderId = requester.RequesterId
-                };
+                    var trans = new transactionModel()
+                    {
+                        ShareId = providedStock.StockId,
+                        TraderId = requester.RequesterId
+                    };
 
-                
-                var stringContent = new StringContent(JsonConvert.SerializeObject(trans), Encoding.UTF8, "application/json");
+                    var stringContent = new StringContent(JsonConvert.SerializeObject(trans), Encoding.UTF8, "application/json");
 
-                var result = ShareControlClient.PostAsync("ShareOwner", stringContent);
+                    var result = ShareControlClient.PostAsync("ShareOwnerControlService", stringContent);
+                    // RabbitMQ stuff
+                }
 
-                // RabbitMQ stuff
             }
         }
 
-        public async void sellShare(Provider provider)
+        public async void SellShare(Provider provider)
         {
             var ProviderClient = _clientFactory.CreateClient("ProviderService");
             var RequesterClient = _clientFactory.CreateClient("RequesterService");
@@ -64,21 +67,24 @@ namespace BrokerService
 
             if (findReqShare != null)
             {
-                await ProviderClient.DeleteAsync(provider.ProviderId.ToString());
-                await RequesterClient.DeleteAsync(findReqShare.RequesterId.ToString());
+                var delResult1 = await ProviderClient.DeleteAsync(provider.ProviderId.ToString());
+                var delResult2 = await RequesterClient.DeleteAsync(findReqShare.RequesterId.ToString());
 
-                var trans = new transactionModel()
+                if (delResult1.IsSuccessStatusCode && delResult2.IsSuccessStatusCode)
                 {
-                    ShareId = provider.StockId,
-                    TraderId = findReqShare.RequesterId
-                };
+                    var trans = new transactionModel()
+                    {
+                        ShareId = provider.StockId,
+                        TraderId = findReqShare.RequesterId
+                    };
 
 
-                var stringContent = new StringContent(JsonConvert.SerializeObject(trans), Encoding.UTF8, "application/json");
+                    var stringContent = new StringContent(JsonConvert.SerializeObject(trans), Encoding.UTF8, "application/json");
 
-                var result = ShareControlClient.PostAsync("ShareOwner", stringContent);
+                    var result = ShareControlClient.PostAsync("ShareOwner", stringContent);
 
-                // RabbitMQ stuff
+                    // RabbitMQ stuff
+                }
             }
         }
     }
