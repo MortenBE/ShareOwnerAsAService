@@ -41,6 +41,7 @@ namespace ShareService.Controllers
             return shareServiceModel;
         }
 
+        /*
         // PUT: api/Share/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -52,6 +53,37 @@ namespace ShareService.Controllers
             }
 
             _context.Entry(shareServiceModel).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ShareServiceModelExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+        */
+
+        // PUT: api/Share/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut]
+        public async Task<IActionResult> ChangeShareOwner(Guid id, Guid traderId)
+        {
+            var shareServiceModel = await GetShareServiceModel(id);
+            var share = shareServiceModel.Value;
+            share.TraderId = traderId;            
+
+            _context.Entry(share).State = EntityState.Modified;
 
             try
             {

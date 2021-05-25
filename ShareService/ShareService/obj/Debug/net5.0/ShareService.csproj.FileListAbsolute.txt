@@ -299,3 +299,8 @@ C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt
 C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\obj\Debug\net5.0\ref\ShareService.dll
 C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\obj\Debug\net5.0\ShareService.pdb
 C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\obj\Debug\net5.0\ShareService.genruntimeconfig.cache
+C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Morte\OneDrive\Dokumenter\IKT - Studie\6. Semester\Disp\EksamensProjekt\ShareOwnerAsAService\ShareService\ShareService\obj\Debug\net5.0\ShareService.MvcApplicationPartsAssemblyInfo.cs
