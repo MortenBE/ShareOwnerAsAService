@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{E947DAC2-8258-464D-8DD5-E931E28930AC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TraderService/Models/TraderModel.cs">
+    <Files>
+      <File FileName="TraderService/Models/TraderModel.cs" Line="9" Column="1" />
+      <File FileName="TraderService/Controllers/TraderController.cs" />
+      <File FileName="TraderService/Data/TraderDbContext.cs" />
+      <File FileName="TraderService/appsettings.json" />
+      <File FileName="TraderService/Program.cs" Line="12" Column="1" />
+      <File FileName="TraderService/Startup.cs" Line="10" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TraderService" expanded="True">
+            <Node name="TraderService" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="TraderModel.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TraderService PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

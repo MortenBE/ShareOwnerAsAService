@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{234A5FCD-418F-4419-A895-0F50256852F8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BrokerService/AppSettings.cs">
+    <Files>
+      <File FileName="BrokerService/Controllers/BrokerController.cs" Line="22" Column="27" />
+      <File FileName="BrokerService/BrokerServiceDomain.cs" Line="84" Column="67" />
+      <File FileName="BrokerService/Share.cs" Line="4" Column="6" />
+      <File FileName="BrokerService/Program.cs" Line="1" Column="1" />
+      <File FileName="BrokerService/Startup.cs" Line="37" Column="16" />
+      <File FileName="BrokerService/Provider.cs" Line="7" Column="17" />
+      <File FileName="BrokerService/Requester.cs" Line="7" Column="18" />
+      <File FileName="BrokerService/transactionModel.cs" Line="8" Column="6" />
+      <File FileName="BrokerService/appsettings.json" Line="1" Column="1" />
+      <File FileName="BrokerService/AppSettings.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BrokerService" expanded="True">
+            <Node name="BrokerService" expanded="True">
+              <Node name="AppSettings.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BrokerService PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
