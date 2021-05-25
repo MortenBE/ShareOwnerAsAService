@@ -1,4 +1,6 @@
-﻿namespace BrokerService
+﻿using System;
+
+namespace BrokerService
 {
     public class Provider
     {

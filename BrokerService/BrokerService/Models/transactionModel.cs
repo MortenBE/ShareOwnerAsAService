@@ -3,8 +3,7 @@ namespace BrokerService
 {
     public class transactionModel
     {
-        public transactionModel()
-        {
-        }
+        public Guid ShareId { get; set; }
+        public Guid TraderId { get; set; }
     }
 }

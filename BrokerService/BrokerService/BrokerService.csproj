@@ -8,6 +8,7 @@
     <None Remove="Controllers\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Models\" />
+    <None Remove="Swashbuckle.AspNetCore.Swagger" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -15,5 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.4" />
   </ItemGroup>
 </Project>
