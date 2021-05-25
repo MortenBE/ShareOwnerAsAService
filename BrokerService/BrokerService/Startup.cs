@@ -22,7 +22,7 @@ namespace BrokerService
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddHttpClient("ShareService", c =>
+            services.AddHttpClient("ShareControlService", c =>
             {
                 c.BaseAddress = new Uri(AppSettings.Get<string>("ShareService"));
             });
