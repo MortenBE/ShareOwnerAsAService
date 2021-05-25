@@ -29,8 +29,9 @@ namespace BrokerService
 
             if(providedStock != null)
             {
-                var delResult1 = await ProviderClient.DeleteAsync(providedStock.ProviderId.ToString());
-                var delResult2 = await RequesterClient.DeleteAsync(requester.RequesterId.ToString());
+
+                var delResult1 = await ProviderClient.DeleteAsync(ProviderClient.BaseAddress + "Provider/" + providedStock.ProviderId.ToString()); ;
+                var delResult2 = await RequesterClient.DeleteAsync(RequesterClient.BaseAddress + "Requester/" + requester.RequesterId.ToString());
 
         
 
