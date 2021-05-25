@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{48132721-5C0D-486E-A16E-C0A9609E2343}|Default">
   <MonoDevelop.Ide.ItemProperties.RequesterService PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RequesterService/AppSettings.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RequesterService/Startup.cs">
     <Files>
       <File FileName="RequesterService/Models/RequesterModel.cs" Line="8" Column="10" />
-      <File FileName="RequesterService/Startup.cs" />
+      <File FileName="RequesterService/Startup.cs" Line="34" Column="1" />
       <File FileName="RequesterService/Program.cs" />
       <File FileName="RequesterService/appsettings.json" Line="8" Column="7" />
       <File FileName="RequesterService/Controllers/RequesterController.cs" />
@@ -15,7 +15,7 @@
         <State name="__root__">
           <Node name="RequesterService" expanded="True">
             <Node name="RequesterService" expanded="True">
-              <Node name="AppSettings.cs" selected="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
