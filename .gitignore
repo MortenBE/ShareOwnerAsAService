@@ -339,3 +339,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+ApiProxyService/ApiProxyService/.vs/ApiProxyService/xs/UserPrefs.xml
+BrokerService/.vs/BrokerService/xs/UserPrefs.xml
+ProviderService/ProviderService/.vs/ProviderService/xs/UserPrefs.xml
+RequesterService/.vs/RequesterService/xs/UserPrefs.xml
