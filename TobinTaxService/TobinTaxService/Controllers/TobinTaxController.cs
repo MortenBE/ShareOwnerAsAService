@@ -15,6 +15,15 @@ namespace TobinTaxService.Controllers
     {
         private readonly TobinTaxDbContext _context;
 
+
+        public void  AddTobinTax(TobinTaxModel tobinTaxModel)
+        {
+            _context.TobinTaxModel.Add(tobinTaxModel);
+            _context.SaveChangesAsync();            
+        }
+
+       
+
         public TobinTaxController(TobinTaxDbContext context)
         {
             _context = context;

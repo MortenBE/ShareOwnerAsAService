@@ -40,7 +40,7 @@ namespace ApiProxyService
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "BrokerServiceAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIProxyService", Version = "v1" });
             });
         }      
         
@@ -52,7 +52,7 @@ namespace ApiProxyService
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BrokerServiceAPI v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "APIProxyService v1"));
             }
 
             app.UseHttpsRedirection();
