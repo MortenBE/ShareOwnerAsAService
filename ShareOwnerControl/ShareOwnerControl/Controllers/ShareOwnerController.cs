@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using ShareOwnerControl.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace ShareOwnerControl.Controllers
@@ -12,10 +14,24 @@ namespace ShareOwnerControl.Controllers
     [Route("api/[controller]")]
     public class ShareOwnerController : Controller
     {
-        private TransactionServiceDomain _domain;
+        private readonly IHttpClientFactory _clientFactory;
         public ShareOwnerController(IHttpClientFactory httpClientFactory)
         {
-            _domain = new TransactionServiceDomain(httpClientFactory);
+            _clientFactory = httpClientFactory;
+        }
+
+
+        [Route("UpdateOwnership")]
+        [HttpPost]
+        public async Task<ActionResult<HttpResponseMessage>> UpdateOwnership(Transaction txn)
+        {
+            var share = new Share() { ShareId = txn.ShareId, TraderId = txn.TraderId };
+            var client = _clientFactory.CreateClient("ShareService");
+            var content = JsonConvert.SerializeObject(share);
+            var stringContent = new StringContent(content, Encoding.UTF8, "application/json");
+            var response = await client.PutAsync(client.BaseAddress + "Share", stringContent);
+
+            return response;
         }
     }    
         

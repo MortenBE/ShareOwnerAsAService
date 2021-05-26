@@ -12,7 +12,7 @@ namespace BrokerService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrokerController : Controller
+    public class BrokerController : ControllerBase
     {
         private BrokerServiceDomain _domain; 
         public BrokerController(IHttpClientFactory httpClientFactory)
@@ -23,18 +23,18 @@ namespace BrokerService.Controllers
         // POST api/values
         [Route("Request")]
         [HttpPost]
-        public void RequestPost(string value)
+        public void RequestPost(Requester value)
         {
-            _domain.BuyShare(JsonConvert.DeserializeObject<Requester>(value));
+            _domain.BuyShare(value);
         }
 
         // POST api/values
         [Route("Provide")]
         [HttpPost]
-        public void ProvidePost(string value)
+        public void ProvidePost(Provider value)
         {
 
-            _domain.SellShare(JsonConvert.DeserializeObject<Provider>(value));
+            _domain.SellShare(value);
         }
     }
 }

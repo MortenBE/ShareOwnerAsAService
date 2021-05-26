@@ -26,7 +26,10 @@ namespace ShareOwnerControl
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddHttpClient("ShareService", c =>
+            {
+                c.BaseAddress = new Uri(AppSettings.Get<string>("ShareService"));
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

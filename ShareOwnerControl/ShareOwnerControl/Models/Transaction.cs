@@ -7,7 +7,7 @@ namespace ShareOwnerControl.Models
 {
     public class Transaction
     {
-        Guid TraderId { get; set; }
-        Guid StockId { get; set; }
+        public Guid TraderId { get; set; }
+        public Guid ShareId { get; set; }
     }
 }
