@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 namespace TobinTaxService
 {
@@ -29,6 +30,11 @@ namespace TobinTaxService
 
             services.AddControllers();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TobinTaxService API", Version = "v1" });
+            });
+
             services.AddDbContext<TobinTaxDbContext>(options =>
                     options.UseSqlite(Configuration.GetConnectionString("TobinTaxDbContext")));
         }
@@ -39,6 +45,8 @@ namespace TobinTaxService
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TobinTaxServiceAPI v1"));
             }
 
             app.UseHttpsRedirection();
