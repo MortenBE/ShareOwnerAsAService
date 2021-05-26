@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  grp15-tseis-swtdisp-apiproxyservice:
+    build: './ApiProxyService/ApiProxyService'
+    image: lucifersuncle/grp15-tseis-swtdisp-apiproxyservice
+  grp15-tseis-swtdisp-brokerservice:
+    build: './BrokerService'
+    image: lucifersuncle/grp15-tseis-swtdisp-brokerservice
+  grp15-tseis-swtdisp-providerservice:
+    build: './ProviderService'
+    image: lucifersuncle/grp15-tseis-swtdisp-providerservice
+  grp15-tseis-swtdisp-shareownercontrol:
+    build: './ShareOwnerControl'
+    image: lucifersuncle/grp15-tseis-swtdisp-shareownercontrol
+  grp15-tseis-swtdisp-shareservice:
+    build: './ShareService'
+    image: lucifersuncle/grp15-tseis-swtdisp-shareservice
+  grp15-tseis-swtdisp-stocktraderbroker:
+    build: './StockTraderBroker/StockTraderBroker'
+    image: lucifersuncle/grp15-tseis-swtdisp-stocktraderbroker
+  grp15-tseis-swtdisp-tobintaxservice:
+    build: './TobinTaxService'
+    image: lucifersuncle/grp15-tseis-swtdisp-tobintaxservice
+  grp15-tseis-swtdisp-traderservice:
+    build: './TraderService'
+    image: lucifersuncle/grp15-tseis-swtdisp-traderservice
