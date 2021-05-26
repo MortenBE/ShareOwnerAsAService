@@ -40,67 +40,23 @@ namespace ShareService.Controllers
 
             return shareServiceModel;
         }
-
-        /*
-        // PUT: api/Share/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutShareServiceModel(Guid id, ShareServiceModel shareServiceModel)
-        {
-            if (id != shareServiceModel.ShareId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(shareServiceModel).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ShareServiceModelExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-        */
-
-        // PUT: api/Share/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        
         [HttpPut]
-        public async Task<IActionResult> ChangeShareOwner(Guid id, Guid traderId)
+        public async Task<IActionResult> ChangeShareOwner(ShareServiceModel shareServiceModel)
         {
-            var shareServiceModel = await GetShareServiceModel(id);
-            var share = shareServiceModel.Value;
-            share.TraderId = traderId;            
-
-            _context.Entry(share).State = EntityState.Modified;
-
-            try
+            using (_context)
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ShareServiceModelExists(id))
+                var share = await _context.ShareServiceModel.FindAsync(shareServiceModel.ShareId);
+
+                if (share == null)
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
-            }
 
+                share.TraderId = shareServiceModel.TraderId;
+
+                await _context.SaveChangesAsync();
+            }
             return NoContent();
         }
 

@@ -31,7 +31,6 @@ namespace BrokerService
             {
                 var delResult1 = await ProviderClient.DeleteAsync(providedStock.ProviderId.ToString());
                 var delResult2 = await RequesterClient.DeleteAsync(requester.RequesterId.ToString());
-
         
 
                 if (delResult1.IsSuccessStatusCode && delResult2.IsSuccessStatusCode)
