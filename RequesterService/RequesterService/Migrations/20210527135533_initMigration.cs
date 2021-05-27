@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RequesterService.Migrations
 {
-    public partial class init : Migration
+    public partial class initMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,8 +11,8 @@ namespace RequesterService.Migrations
                 name: "RequesterModel",
                 columns: table => new
                 {
-                    RequesterId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    Share = table.Column<string>(type: "TEXT", nullable: true)
+                    RequesterId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Share = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
