@@ -17,7 +17,7 @@ namespace ApiProxyService.Controllers
         {
             _clientFactory = clientFactory;
         }
-
+        [Route("Shares")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Share>>> GetShare()
         {           
@@ -33,7 +33,7 @@ namespace ApiProxyService.Controllers
 
             return shares;
         }
-
+        [Route("Shares")]
         [HttpPost]
         public async Task<ActionResult<HttpResponseMessage>> PostShare(Share share)
         {
