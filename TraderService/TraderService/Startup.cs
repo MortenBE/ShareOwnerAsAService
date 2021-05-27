@@ -18,7 +18,7 @@ namespace TraderService
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services, TraderDbContext context)
+        public void ConfigureServices(IServiceCollection services)
         {
 
             services.AddControllers();
@@ -39,7 +39,8 @@ namespace TraderService
 
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExcepti
+                    onPage();
             }
             else
             {
