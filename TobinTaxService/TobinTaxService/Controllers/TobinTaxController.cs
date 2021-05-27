@@ -13,16 +13,7 @@ namespace TobinTaxService.Controllers
     [ApiController]
     public class TobinTaxController : ControllerBase
     {
-        private readonly TobinTaxDbContext _context;
-
-
-        public void  AddTobinTax(TobinTaxModel tobinTaxModel)
-        {
-            _context.TobinTaxModel.Add(tobinTaxModel);
-            _context.SaveChangesAsync();            
-        }
-
-       
+        private readonly TobinTaxDbContext _context;       
 
         public TobinTaxController(TobinTaxDbContext context)
         {

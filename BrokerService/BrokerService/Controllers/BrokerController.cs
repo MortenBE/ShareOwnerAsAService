@@ -33,7 +33,6 @@ namespace BrokerService.Controllers
         [HttpPost]
         public void ProvidePost(Provider value)
         {
-
             _domain.SellShare(value);
         }
     }
