@@ -11,7 +11,7 @@ namespace TraderService.Migrations
                 name: "TraderModel",
                 columns: table => new
                 {
-                    TraderId = table.Column<Guid>(type: "uniqueidentifier", maxLength: 86, nullable: false)
+                    TraderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {

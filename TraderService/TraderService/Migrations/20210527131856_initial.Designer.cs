@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TraderService.Migrations
 {
     [DbContext(typeof(TraderDbContext))]
-    [Migration("20210527130005_initial")]
+    [Migration("20210527131856_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,6 @@ namespace TraderService.Migrations
                 {
                     b.Property<Guid>("TraderId")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(86)
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("TraderId");

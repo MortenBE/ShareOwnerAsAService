@@ -22,7 +22,6 @@ namespace TraderService.Migrations
                 {
                     b.Property<Guid>("TraderId")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(86)
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("TraderId");
