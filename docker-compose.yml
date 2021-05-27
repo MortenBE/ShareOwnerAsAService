@@ -4,6 +4,8 @@ services:
   grp15-tseis-swtdisp-apiproxyservice:
     build: './ApiProxyService/ApiProxyService'
     image: lucifersuncle/grp15-tseis-swtdisp-apiproxyservice
+    labels:
+      kompose.service.type: LoadBalancer
   grp15-tseis-swtdisp-brokerservice:
     build: './BrokerService'
     image: lucifersuncle/grp15-tseis-swtdisp-brokerservice
