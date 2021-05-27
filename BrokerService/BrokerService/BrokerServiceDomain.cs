@@ -98,7 +98,7 @@ namespace BrokerService
             {
                 TraderId = providedStock.ProviderId,
                 BoughtStock = providedStock.Stock,
-                PayedTax = 100
+                PayedTax = providedStock.StockValue
             };
 
             string tobinTaxJson = JsonConvert.SerializeObject(tobinTax);

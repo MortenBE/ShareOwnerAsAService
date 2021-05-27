@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Text;
+using System;
 
 namespace ApiProxyService.Controllers
 {
@@ -95,11 +96,20 @@ namespace ApiProxyService.Controllers
         }
         [Route("Provide")]
         [HttpPost]
-        public async Task<ActionResult<HttpResponseMessage>> PostProvide(Provide provide)
+        public async Task<ActionResult<HttpResponseMessage>> PostProvide(Share share)
         {
+            var providedShare = new Provide()
+            {
+                ProviderId = Guid.NewGuid(),
+                TraderId = share.TraderId,
+                Stock = share.Stock,
+                StockId = share.ShareId,
+                StockValue = share.Value
+            };     
+
             var client = _clientFactory.CreateClient("ProviderService");
 
-            var content = JsonConvert.SerializeObject(provide);
+            var content = JsonConvert.SerializeObject(providedShare);
 
             var stringContent = new StringContent(content, Encoding.UTF8, "application/json");
 

@@ -84,7 +84,7 @@ namespace ProviderService.Controllers
         {
             _context.ProviderModel.Add(providerModel);
             await _context.SaveChangesAsync();
-            _domain.notifyProvided(providerModel);
+            //_domain.notifyProvided(providerModel);
 
 
             return CreatedAtAction("GetProviderModel", new { id = providerModel.ProviderId }, providerModel);
