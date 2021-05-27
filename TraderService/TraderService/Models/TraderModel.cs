@@ -5,7 +5,8 @@ namespace TraderService.Models
 {
     public class TraderModel
     {
-            [Key]
-            public Guid TraderId { get; set; }
+        [Key]
+        [StringLength(86)]
+        public Guid TraderId { get; set; }
     }
 }
