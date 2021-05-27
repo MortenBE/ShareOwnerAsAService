@@ -9,7 +9,7 @@ namespace BrokerService
 {
     public static class RabbitMQProducer
     {
-        public static void Publish(IModel channel)
+        public static void Publish(IModel channel, string json)
         {
             channel.QueueDeclare(queue: "tax-queue",
                                      durable: true,
@@ -17,8 +17,8 @@ namespace BrokerService
                                      autoDelete: false,
                                      arguments: null);
             
-            string message = "Hello World!";
-            var body = Encoding.UTF8.GetBytes(message);
+            //string message = "Hello World!";
+            var body = Encoding.UTF8.GetBytes(json);
 
             channel.BasicPublish(exchange: "",
                                      routingKey: "tax-queue",
