@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProviderService.Migrations
 {
-    public partial class init : Migration
+    public partial class initMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,9 +11,11 @@ namespace ProviderService.Migrations
                 name: "ProviderModel",
                 columns: table => new
                 {
-                    ProviderId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    Stock = table.Column<string>(type: "TEXT", nullable: true),
-                    StockId = table.Column<Guid>(type: "TEXT", nullable: false)
+                    ProviderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TraderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Stock = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    StockId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    StockValue = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
