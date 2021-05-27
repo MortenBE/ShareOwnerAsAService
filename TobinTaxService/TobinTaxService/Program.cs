@@ -12,18 +12,17 @@ namespace TobinTaxService
     {
         public static void Main(string[] args)
         {
-
+            /*
             var factory = new ConnectionFactory() {
                 HostName = "localhost"
             };
 
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
-            RabbitMQConsumer.Consume(channel);
+            RabbitMQConsumer.Consume(channel, context);
+            */
 
-            CreateHostBuilder(args).Build().Run();
-
-           
+            CreateHostBuilder(args).Build().Run();           
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

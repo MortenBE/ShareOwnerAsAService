@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using TobinTaxService.Models;
 
 namespace TobinTaxService
 {
@@ -28,6 +29,7 @@ namespace TobinTaxService
         public void ConfigureServices(IServiceCollection services)
         {
 
+            
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
@@ -37,6 +39,8 @@ namespace TobinTaxService
 
             services.AddDbContext<TobinTaxDbContext>(options =>
                     options.UseSqlite(Configuration.GetConnectionString("TobinTaxDbContext")));
+
+            services.AddHostedService<RabbitMQConsumer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
