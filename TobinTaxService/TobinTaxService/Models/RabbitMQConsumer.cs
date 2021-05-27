@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
@@ -35,8 +36,7 @@ namespace TobinTaxService.Models
                 HostName = _hostname
             };
 
-            _connection = factory.CreateConnection();
-            //_connection.ConnectionShutdown += RabbitMQ_ConnectionShutdown;
+            _connection = factory.CreateConnection();      
             _channel = _connection.CreateModel();
             
             _channel.QueueDeclare("tax-queue",
@@ -55,7 +55,9 @@ namespace TobinTaxService.Models
             {
                 var body = e.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-                AddTobinTax();
+                var soldStock = JsonConvert.DeserializeObject<TobinTaxModel>(message);
+
+                AddTobinTax(soldStock);
             };
 
             _channel.BasicConsume("tax-queue", true, consumer);
@@ -63,20 +65,20 @@ namespace TobinTaxService.Models
             return Task.CompletedTask;
         }
 
-        public async void AddTobinTax()
+        public async void AddTobinTax(TobinTaxModel soldStock)
         {
             //Adding tax stub
-            var tobinTax = new TobinTaxModel();
-            tobinTax.BoughtStock = "Ris";
-            tobinTax.PayedTax = 100;
-            tobinTax.TraderId = Guid.NewGuid();
-            tobinTax.TaxId = Guid.NewGuid();
+            var tax = new TobinTaxModel();
+            tax.TaxId = Guid.NewGuid();
+            tax.TraderId = soldStock.TraderId;
+            tax.BoughtStock = soldStock.BoughtStock;            
+            tax.PayedTax = soldStock.PayedTax * 0.10;            
 
             using (var scope = _serviceProvider.CreateScope())
             {
                 var context = scope.ServiceProvider.GetService<TobinTaxDbContext>();
 
-                context.TobinTaxModel.Add(tobinTax);
+                context.TobinTaxModel.Add(tax);
                 await context.SaveChangesAsync();
             }
         }
