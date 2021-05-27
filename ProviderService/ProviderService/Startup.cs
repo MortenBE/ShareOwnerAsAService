@@ -25,7 +25,7 @@ namespace ProviderService
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services, ProviderDbContext context)
         {
 
             services.AddHttpClient("BrokerService", c =>
@@ -36,7 +36,8 @@ namespace ProviderService
             services.AddControllers();
 
             services.AddDbContext<ProviderDbContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("ProviderDbContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("ProviderDbContext")));
+            context.Database.Migrate();
 
             services.AddSwaggerGen(c =>
             {
@@ -47,10 +48,6 @@ namespace ProviderService
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
-            app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProviderService v1"));
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -62,7 +59,12 @@ namespace ProviderService
                 app.UseHsts();
             }
 
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProviderService API v1"));
+
             app.UseHttpsRedirection();
+
 
             app.UseRouting();
 
@@ -72,6 +74,8 @@ namespace ProviderService
             {
                 endpoints.MapControllers();
             });
+
+
         }
     }
 }
