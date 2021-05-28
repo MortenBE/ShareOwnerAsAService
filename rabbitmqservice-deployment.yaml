@@ -39,8 +39,8 @@ spec:
             - containerPort: 15672
           resources: {}
           volumeMounts:
-            - name: pre-install
-              mountPath: /etc/rabbitmq
+            - mountPath: /etc/rabbitmq/
+              name: rabbitmqservice-claim0
             - mountPath: /var/lib/rabbitmq/
               name: rabbitmqservice-claim1
             - mountPath: /var/log/rabbitmq/
