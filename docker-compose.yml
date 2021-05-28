@@ -3,19 +3,12 @@ version: '3'
 services:
   rabbitmqservice:
     image: rabbitmq:3.8.16-management-alpine
-    auth:
-      username: guest
-      password: guest
     container_name: rabbitmq
     volumes:
         - ./.docker/rabbitmq/etc/:/etc/rabbitmq/
         - ./.docker/rabbitmq/data/:/var/lib/rabbitmq/
         - ./.docker/rabbitmq/logs/:/var/log/rabbitmq/
     environment:
-        - name: RABBITMQ_USERNAME
-          value: admin
-        - name: RABBITMQ_PASSWORD
-          value: G84i8W1GKfilq4nW
         RABBITMQ_ERLANG_COOKIE: IDFRSSJFXFMWMBATZTZP
     ports:
         - 5672:5672
