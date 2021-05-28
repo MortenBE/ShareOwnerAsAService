@@ -11,10 +11,10 @@ namespace TobinTaxService.Migrations
                 name: "TobinTaxModel",
                 columns: table => new
                 {
-                    TaxId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    TraderId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    BoughtStock = table.Column<string>(type: "TEXT", nullable: true),
-                    PayedTax = table.Column<double>(type: "REAL", nullable: false)
+                    TaxId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TraderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    BoughtStock = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PayedTax = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
