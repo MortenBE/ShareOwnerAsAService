@@ -26,6 +26,10 @@ spec:
     spec:
       containers:
         - env:
+            - name: RABBITMQ_DEFAULT_PASS
+              value: pass
+            - name: RABBITMQ_DEFAULT_USER
+              value: rabbit
             - name: RABBITMQ_ERLANG_COOKIE
               value: IDFRSSJFXFMWMBATZTZP
           image: rabbitmq:3.8.16-management-alpine
@@ -35,14 +39,16 @@ spec:
             - containerPort: 15672
           resources: {}
           volumeMounts:
-            - mountPath: /etc/rabbitmq/
-              name: rabbitmqservice-claim0
+            - name: pre-install
+              mountPath: /etc/rabbitmq
             - mountPath: /var/lib/rabbitmq/
               name: rabbitmqservice-claim1
             - mountPath: /var/log/rabbitmq/
               name: rabbitmqservice-claim2
       restartPolicy: Always
       volumes:
+        - name: pre-install
+          emptyDir: {}
         - name: rabbitmqservice-claim0
           persistentVolumeClaim:
             claimName: rabbitmqservice-claim0
@@ -52,14 +58,4 @@ spec:
         - name: rabbitmqservice-claim2
           persistentVolumeClaim:
             claimName: rabbitmqservice-claim2
-        - name: config-volume
-          configMap:
-            name: rabbitmq-config
-            items:
-            - key: rabbitmq.conf
-              path: rabbitmq.conf
-            - key: enabled_plugins
-              path: enabled_plugins
-            - key: definitions.json
-              path: definitions.json    
 status: {}
