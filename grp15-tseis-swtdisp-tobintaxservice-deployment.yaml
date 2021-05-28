@@ -2,9 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    kompose.cmd: C:\ProgramData\chocolatey\lib\kubernetes-kompose\tools\kompose.exe
-      convert
-    kompose.version: 0.7.0 (c25b7e8)
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (955b78124)
   creationTimestamp: null
   labels:
     io.kompose.service: grp15-tseis-swtdisp-tobintaxservice
@@ -18,19 +17,15 @@ spec:
   template:
     metadata:
       annotations:
-        kompose.cmd: C:\ProgramData\chocolatey\lib\kubernetes-kompose\tools\kompose.exe
-          convert
-        kompose.version: 0.7.0 (c25b7e8)
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (955b78124)
       creationTimestamp: null
       labels:
         io.kompose.service: grp15-tseis-swtdisp-tobintaxservice
     spec:
       containers:
-      - image: lucifersuncle/grp15-tseis-swtdisp-tobintaxservice
-        imagePullPolicy: ""
-        name: grp15-tseis-swtdisp-tobintaxservice
-        resources: {}
+        - image: lucifersuncle/grp15-tseis-swtdisp-tobintaxservice
+          name: grp15-tseis-swtdisp-tobintaxservice
+          resources: {}
       restartPolicy: Always
-      serviceAccountName: ""
-      volumes: null
 status: {}

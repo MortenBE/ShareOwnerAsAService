@@ -6,13 +6,13 @@ metadata:
     kompose.version: 1.22.0 (955b78124)
   creationTimestamp: null
   labels:
-    io.kompose.service: grp15-tseis-swtdisp-brokerservice
-  name: grp15-tseis-swtdisp-brokerservice
+    io.kompose.service: grp15-tseis-swtdisp-requesterservice
+  name: grp15-tseis-swtdisp-requesterservice
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: grp15-tseis-swtdisp-brokerservice
+      io.kompose.service: grp15-tseis-swtdisp-requesterservice
   strategy: {}
   template:
     metadata:
@@ -21,11 +21,11 @@ spec:
         kompose.version: 1.22.0 (955b78124)
       creationTimestamp: null
       labels:
-        io.kompose.service: grp15-tseis-swtdisp-brokerservice
+        io.kompose.service: grp15-tseis-swtdisp-requesterservice
     spec:
       containers:
-        - image: lucifersuncle/grp15-tseis-swtdisp-brokerservice
-          name: grp15-tseis-swtdisp-brokerservice
+        - image: lucifersuncle/grp15-tseis-swtdisp-requesterservice
+          name: grp15-tseis-swtdisp-requesterservice
           resources: {}
       restartPolicy: Always
 status: {}
