@@ -26,10 +26,6 @@ spec:
     spec:
       containers:
         - env:
-            - name: RABBITMQ_DEFAULT_PASS
-              value: pass
-            - name: RABBITMQ_DEFAULT_USER
-              value: rabbit
             - name: RABBITMQ_ERLANG_COOKIE
               value: IDFRSSJFXFMWMBATZTZP
           image: rabbitmq:3.8.16-management-alpine

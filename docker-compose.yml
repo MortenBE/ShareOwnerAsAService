@@ -10,8 +10,6 @@ services:
         - ./.docker/rabbitmq/logs/:/var/log/rabbitmq/
     environment:
         RABBITMQ_ERLANG_COOKIE: IDFRSSJFXFMWMBATZTZP
-        RABBITMQ_DEFAULT_USER: rabbit
-        RABBITMQ_DEFAULT_PASS: pass
     ports:
         - 5672:5672
         - 15672:15672
