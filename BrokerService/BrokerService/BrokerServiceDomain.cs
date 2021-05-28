@@ -105,33 +105,13 @@ namespace BrokerService
 
             var factory = new ConnectionFactory()
             {
-                HostName = "localhost"
+                HostName = AppSettings.Get<string>("RabbitMQ"),
+                UserName = "rabbit",
+                Password = "pass"
             };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
             RabbitMQProducer.Publish(channel, tobinTaxJson);
         }
-
-        /*
-        private void RegisterTaxStub()
-        {
-            var tobinTax = new TobinTaxModel()
-            {
-                TraderId = Guid.NewGuid(),
-                BoughtStock = "Pasta",
-                PayedTax = 100
-            };
-
-            string tobinTaxJson = JsonConvert.SerializeObject(tobinTax);
-
-            var factory = new ConnectionFactory()
-            {
-                HostName = "localhost"
-            };
-            var connection = factory.CreateConnection();
-            var channel = connection.CreateModel();
-            RabbitMQProducer.Publish(channel, tobinTaxJson);
-        }
-        */
     }
 }
