@@ -31,7 +31,7 @@ namespace TobinTaxService
             services.AddControllers();
 
             services.AddDbContext<TobinTaxDbContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("TobinTaxDbContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("TobinTaxDbContext")));
 
             services.AddSwaggerGen(c =>
             {
