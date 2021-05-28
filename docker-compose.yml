@@ -1,6 +1,18 @@
 version: '3'
 
 services:
+  rabbitmqservice:
+    image: rabbitmq:3.8.16-management-alpine
+    container_name: rabbitmq
+    volumes:
+        - ./.docker/rabbitmq/etc/:/etc/rabbitmq/
+        - ./.docker/rabbitmq/data/:/var/lib/rabbitmq/
+        - ./.docker/rabbitmq/logs/:/var/log/rabbitmq/
+    environment:
+        RABBITMQ_ERLANG_COOKIE: IDFRSSJFXFMWMBATZTZP
+    ports:
+        - 5672:5672
+        - 15672:15672
   grp15-tseis-swtdisp-apiproxyservice:
     build: './ApiProxyService/ApiProxyService'
     image: lucifersuncle/grp15-tseis-swtdisp-apiproxyservice
