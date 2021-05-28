@@ -30,13 +30,13 @@ namespace TobinTaxService
         {            
             services.AddControllers();
 
+            services.AddDbContext<TobinTaxDbContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("TobinTaxDbContext")));
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TobinTaxService API", Version = "v1" });
             });
-
-            services.AddDbContext<TobinTaxDbContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("TobinTaxDbContext")));
 
             services.AddHostedService<RabbitMQConsumer>();
         }
