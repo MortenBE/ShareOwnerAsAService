@@ -25,7 +25,7 @@ namespace ProviderService
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services, ProviderDbContext context)
+        public void ConfigureServices(IServiceCollection services)
         {
 
             services.AddHttpClient("BrokerService", c =>
@@ -37,7 +37,7 @@ namespace ProviderService
 
             services.AddDbContext<ProviderDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("ProviderDbContext")));
-            context.Database.Migrate();
+            
 
             services.AddSwaggerGen(c =>
             {
@@ -46,8 +46,10 @@ namespace ProviderService
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ProviderDbContext context)
         {
+            context.Database.Migrate();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

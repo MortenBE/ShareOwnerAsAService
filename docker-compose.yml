@@ -27,3 +27,6 @@ services:
   grp15-tseis-swtdisp-traderservice:
     build: './TraderService'
     image: lucifersuncle/grp15-tseis-swtdisp-traderservice
+  grp15-tseis-swtdisp-requesterservice:
+    build: './RequesterService'
+    image: lucifersuncle/grp15-tseis-swtdisp-requesterservice    
