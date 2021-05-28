@@ -48,7 +48,7 @@ spec:
       restartPolicy: Always
       volumes:
         - name: pre-install
-         emptyDir: {}
+          emptyDir: {}
         - name: rabbitmqservice-claim0
           persistentVolumeClaim:
             claimName: rabbitmqservice-claim0
