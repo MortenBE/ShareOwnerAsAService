@@ -33,7 +33,9 @@ namespace TobinTaxService.Models
         {
             var factory = new ConnectionFactory()
             {
-                HostName = _hostname
+                HostName = _hostname,
+                UserName = "guest",
+                Password = "guest"
             };
 
             _connection = factory.CreateConnection();      
