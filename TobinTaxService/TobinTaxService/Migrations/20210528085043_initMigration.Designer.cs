@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TobinTaxService.Migrations
 {
     [DbContext(typeof(TobinTaxDbContext))]
-    [Migration("20210526154545_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20210528085043_initMigration")]
+    partial class initMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

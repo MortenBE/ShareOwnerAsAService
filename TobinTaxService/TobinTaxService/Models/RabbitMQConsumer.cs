@@ -24,7 +24,7 @@ namespace TobinTaxService.Models
 
         public RabbitMQConsumer(IServiceProvider serviceProvider)
         {
-            _hostname = "localhost";
+            _hostname = AppSettings.Get<string>("RabbitMQ");
             _serviceProvider = serviceProvider;      
             InitRabbitMQConsumer();
         }
