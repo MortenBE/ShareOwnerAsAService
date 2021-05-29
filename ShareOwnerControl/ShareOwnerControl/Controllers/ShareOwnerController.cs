@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using ShareOwnerControl.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +18,7 @@ namespace ShareOwnerControl.Controllers
 
 
         [Route("UpdateOwnership")]
-        [HttpPost]
+        [HttpPut]
         public async Task<ActionResult<HttpResponseMessage>> UpdateOwnership(Transaction txn)
         {
             var share = new Share() { ShareId = txn.ShareId, TraderId = txn.TraderId };
