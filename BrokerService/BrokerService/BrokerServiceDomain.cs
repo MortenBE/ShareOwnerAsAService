@@ -83,7 +83,7 @@ namespace BrokerService
 
                     var stringContent = new StringContent(JsonConvert.SerializeObject(trans), Encoding.UTF8, "application/json");
 
-                    var result = ShareControlClient.PostAsync("ShareOwner", stringContent);
+                    var result = ShareControlClient.PostAsync("ShareOwnerControlService", stringContent);
 
                     // RabbitMQ stuff
                     RegisterTax(provider);                
