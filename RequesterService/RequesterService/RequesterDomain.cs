@@ -22,7 +22,6 @@ namespace RequesterService
 
             var stringContent = new StringContent(content, Encoding.UTF8, "application/json");
 
-
             await client.PostAsync(client.BaseAddress + "Broker/Request", stringContent);
 
         }
