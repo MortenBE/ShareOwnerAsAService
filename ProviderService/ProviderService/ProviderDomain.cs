@@ -22,9 +22,7 @@ namespace ProviderService
 
             var stringContent = new StringContent(content, Encoding.UTF8, "application/json");
 
-
             await client.PostAsync(client.BaseAddress + "Broker/Provide", stringContent);
-
         }
 
     }
