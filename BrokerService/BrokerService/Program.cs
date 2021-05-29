@@ -15,8 +15,7 @@ namespace BrokerService
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://localhost:5006");
+                    webBuilder.UseStartup<Startup>();                    
                 });
     }
 }
