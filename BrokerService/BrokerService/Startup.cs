@@ -24,11 +24,7 @@ namespace BrokerService
 
             services.AddHttpClient("ShareControlService", c =>
             {
-                c.BaseAddress = new Uri(AppSettings.Get<string>("ShareService"));
-            });
-            services.AddHttpClient("TraderService", c =>
-            {
-                c.BaseAddress = new Uri(AppSettings.Get<string>("TraderService"));
+                c.BaseAddress = new Uri(AppSettings.Get<string>("ShareControlService"));
             });
             services.AddHttpClient("RequesterService", c =>
             {

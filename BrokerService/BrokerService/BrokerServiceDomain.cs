@@ -95,7 +95,7 @@ namespace BrokerService
         {
             var tobinTax = new TobinTaxModel()
             {
-                TraderId = providedStock.ProviderId,
+                TraderId = providedStock.TraderId,
                 BoughtStock = providedStock.Stock,
                 PayedTax = providedStock.StockValue
             };
