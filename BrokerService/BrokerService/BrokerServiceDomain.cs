@@ -32,9 +32,8 @@ namespace BrokerService
 
             if(providedStock != null)
             {
-
-                var delResult1 = await ProviderClient.DeleteAsync(ProviderClient.BaseAddress + "Provider/" + providedStock.ProviderId.ToString());
-                var delResult2 = await RequesterClient.DeleteAsync(RequesterClient.BaseAddress + "Requester/" + requester.RequesterId.ToString());        
+                var delResult1 = await ProviderClient.DeleteAsync(ProviderClient.BaseAddress + "Provider/" + providedStock.ProviderId);
+                var delResult2 = await RequesterClient.DeleteAsync(RequesterClient.BaseAddress + "Requester/" + requester.RequesterId);        
 
                 if (delResult1.IsSuccessStatusCode && delResult2.IsSuccessStatusCode)
                 {
@@ -70,8 +69,8 @@ namespace BrokerService
 
             if (findReqShare != null)
             {
-                var delResult1 = await ProviderClient.DeleteAsync(provider.ProviderId.ToString());
-                var delResult2 = await RequesterClient.DeleteAsync(findReqShare.RequesterId.ToString());
+                var delResult1 = await ProviderClient.DeleteAsync(ProviderClient.BaseAddress + "Provider/" + provider.ProviderId);
+                var delResult2 = await RequesterClient.DeleteAsync(RequesterClient.BaseAddress + "Requester/" + findReqShare.RequesterId);
 
                 if (delResult1.IsSuccessStatusCode && delResult2.IsSuccessStatusCode)
                 {
@@ -87,8 +86,8 @@ namespace BrokerService
                     var result = ShareControlClient.PostAsync("ShareOwner", stringContent);
 
                     // RabbitMQ stuff
-                    RegisterTax(provider);
-                }
+                    RegisterTax(provider);                
+                }                
             }
         }
 
