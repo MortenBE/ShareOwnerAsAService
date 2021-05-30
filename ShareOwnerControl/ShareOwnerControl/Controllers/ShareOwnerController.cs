@@ -18,7 +18,7 @@ namespace ShareOwnerControl.Controllers
             _clientFactory = httpClientFactory;
         }
                 
-        [HttpPut]
+        [HttpPost]
         public async Task<ActionResult<HttpResponseMessage>> UpdateOwnership(Transaction txn)
         {
             var share = new Share() { ShareId = txn.ShareId, TraderId = txn.TraderId };  
