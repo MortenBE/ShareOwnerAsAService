@@ -54,7 +54,7 @@ namespace BrokerService
         }
 
         public async void SellShare(Provider provider)
-        {
+        {            
             var ProviderClient = _clientFactory.CreateClient("ProviderService");
             var RequesterClient = _clientFactory.CreateClient("RequesterService");
             var ShareControlClient = _clientFactory.CreateClient("ShareControlService");
@@ -83,12 +83,12 @@ namespace BrokerService
 
                     var stringContent = new StringContent(JsonConvert.SerializeObject(trans), Encoding.UTF8, "application/json");
 
-                    var result = ShareControlClient.PutAsync(ShareControlClient.BaseAddress + "ShareOwner", stringContent);
+                    await ShareControlClient.PutAsync(ShareControlClient.BaseAddress + "ShareOwner", stringContent);
 
                     // RabbitMQ stuff
                     RegisterTax(provider);                
                 }                
-            }
+            }            
         }
 
         private void RegisterTax(Provider providedStock)
