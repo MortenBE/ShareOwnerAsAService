@@ -30,9 +30,6 @@ services:
   grp15-tseis-swtdisp-shareservice:
     build: './ShareService'
     image: lucifersuncle/grp15-tseis-swtdisp-shareservice
-  grp15-tseis-swtdisp-stocktraderbroker:
-    build: './StockTraderBroker/StockTraderBroker'
-    image: lucifersuncle/grp15-tseis-swtdisp-stocktraderbroker
   grp15-tseis-swtdisp-tobintaxservice:
     build: './TobinTaxService'
     image: lucifersuncle/grp15-tseis-swtdisp-tobintaxservice
