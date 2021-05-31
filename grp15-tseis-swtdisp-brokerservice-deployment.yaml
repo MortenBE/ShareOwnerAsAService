@@ -26,9 +26,6 @@ spec:
       containers:
         - image: lucifersuncle/grp15-tseis-swtdisp-brokerservice
           name: grp15-tseis-swtdisp-brokerservice
-          resources:
-            requests:
-              memory: "64Mi"
-              cpu: "250m"
+          resources: {}
       restartPolicy: Always
 status: {}
